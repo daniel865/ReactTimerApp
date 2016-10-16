@@ -42,7 +42,7 @@ describe('Countdown', () => {
 
         setTimeout(() => {
           expect(countdown.state.count).toBe(3);
-          expec(countdown.state.countdownStatus).toBe('paused');
+          expect(countdown.state.countdownStatus).toBe('paused');
           done();
         }, 1001);
       });
@@ -54,7 +54,7 @@ describe('Countdown', () => {
 
         setTimeout(() => {
           expect(countdown.state.count).toBe(0);
-          expec(countdown.state.countdownStatus).toBe('stopped');
+          expect(countdown.state.countdownStatus).toBe('stopped');
           done();
         }, 1001);
       });
